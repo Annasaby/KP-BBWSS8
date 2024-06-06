@@ -8,11 +8,7 @@
     <!-- Tailwind -->
     <link rel="stylesheet" href="./css/output.css">
 
-    <!-- Ion-Icon -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
+    <!-- Feather-Icon -->
     <script src="https://unpkg.com/feather-icons"></script>
 
 </head>
@@ -42,7 +38,7 @@
                 </ul>
             </div>
         </div>
-        <hr class="border border-t border-yellow-400">
+        <hr class=" border-t border-yellow-400">
     </nav>
     
     <!-- Jumbotron -->
@@ -52,7 +48,7 @@
 
     <!-- Profil -->
     <section class="w-screen flex justify-center items-center mt-32">
-        <div class="relative w-4/5 flex flex-row-reverse justify-start items-center bg-yellow-400 rounded-3xl">
+        <div class="relative w-4/5 flex flex-row-reverse justify-start items-center bg-gradient-to-bl from-[#FFC928] to-[#FFDA6B] shadow-lg rounded-3xl">
             <div class="absolute left-0 bottom-0">
                 <img class="h-96 z-[9]" src="img/mamangfix.png" alt="foto mamang">
             </div>
@@ -65,35 +61,168 @@
     </section>
 
     <!-- Berita -->
-    <section>
-        <div>
-            <div>
-                <h2>Berita Terkini</h2>
+    <section class="w-screen flex justify-center items-center mt-32 bg-[#E6F5FF]">
+        <div class="w-4/5 my-10">
+            <!-- Judul -->
+            <div class="mb-5">
+                <h2 class="text-3xl font-bold">Berita Terkini</h2>
+                <p class="text-sm font-light">EDISI TAHUN 2024</p>
             </div>
-            <div>
-                <a href="">kiri</a>
-                <a href="">kanan</a>
+            <!-- Container berita -->
+            <div class="relative w-full flex gap-5 py-3">
+                <!-- Berita Utama -->
+                <div class="w-1/2">
+                    <div class=" flex justify-center items-center">
+                        <div class="absolute top-0 left-0 h-12 w-10 rounded-md bg-yellow-300"></div>
+                        <div class="">
+                            <img class="h-80 rounded-lg" src="img/Berita.png" alt="berita utama">
+                        </div>
+                    </div>
+                    <div class="flex p-5 gap-2">
+                        <h5 class="text-right font-semibold">24 OKT</h5>
+                        <div class="w-1 h-10 bg-yellow-400"></div>
+                        <h5 class="font-semibold">Kementrian PUPR Tangani Darurat Bencana Banjir di Wajo Sulawesi Selatan</h5>
+                    </div>
+                </div>
+                <!-- Berita lainnya -->
+                <div class="w-1/2 h-96 overflow-auto">
+                    <!-- Berita 1 -->
+                    <div class="flex gap-5 mb-5">
+                        <div>
+                            <img class="h-20 rounded-lg" src="img/Berita.png" alt="berita lainnya">
+                        </div>
+                        <div class="w-2/3 flex flex-col gap-1 justify-center">
+                            <div>
+                                <h6 class="text-sm font-semibold">Kementrian PUPR Tangani Darurat Bencana Banjir di Wajo Sulawesi Selatan</h6>
+                            </div>
+                            <div class="w-fit left-0 flex flex-col gap-1">
+                                <hr class="border-t border-2 border-yellow-400">
+                                <p class="text-xs text-[#364773]">24 Oktober 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Berita 2 -->
+                    <div class="flex gap-5 mb-5">
+                        <div>
+                            <img class="h-20 rounded-lg" src="img/Berita.png" alt="berita lainnya">
+                        </div>
+                        <div class="w-2/3 flex flex-col gap-1 justify-center">
+                            <div>
+                                <h6 class="text-sm font-semibold">Kementrian PUPR Tangani Darurat Bencana Banjir di Wajo Sulawesi Selatan</h6>
+                            </div>
+                            <div class="w-fit left-0 flex flex-col gap-1">
+                                <hr class="border border-t border-2 border-yellow-400">
+                                <p class="text-xs text-[#364773]">24 Oktober 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Berita 3 -->
+                    <div class="flex gap-5 mb-5">
+                        <div>
+                            <img class="h-20 rounded-lg" src="img/Berita.png" alt="berita lainnya">
+                        </div>
+                        <div class="w-2/3 flex flex-col gap-1 justify-center">
+                            <div>
+                                <h6 class="text-sm font-semibold">Kementrian PUPR Tangani Darurat Bencana Banjir di Wajo Sulawesi Selatan</h6>
+                            </div>
+                            <div class="w-fit left-0 flex flex-col gap-1">
+                                <hr class="border border-t border-2 border-yellow-400">
+                                <p class="text-xs text-[#364773]">24 Oktober 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Berita 4 -->
+                    <div class="flex gap-5 mb-5">
+                        <div>
+                            <img class="h-20 rounded-lg" src="img/Berita.png" alt="berita lainnya">
+                        </div>
+                        <div class="w-2/3 flex flex-col gap-1 justify-center">
+                            <div>
+                                <h6 class="text-sm font-semibold">Kementrian PUPR Tangani Darurat Bencana Banjir di Wajo Sulawesi Selatan</h6>
+                            </div>
+                            <div class="w-fit left-0 flex flex-col gap-1">
+                                <hr class="border border-t border-2 border-yellow-400">
+                                <p class="text-xs text-[#364773]">24 Oktober 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Berita 5 -->
+                    <div class="flex gap-5 mb-5">
+                        <div>
+                            <img class="h-20 rounded-lg" src="img/Berita.png" alt="berita lainnya">
+                        </div>
+                        <div class="w-2/3 flex flex-col gap-1 justify-center">
+                            <div>
+                                <h6 class="text-sm font-semibold">Kementrian PUPR Tangani Darurat Bencana Banjir di Wajo Sulawesi Selatan</h6>
+                            </div>
+                            <div class="w-fit left-0 flex flex-col gap-1">
+                                <hr class="border border-t border-2 border-yellow-400">
+                                <p class="text-xs text-[#364773]">24 Oktober 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-
-        <!-- Card -->
-        <div>
-            <img src="img/fotoBerita.png" alt="foto berita">
-            <div>
-                <h5>
-                    Kementrian PUPR Tangani Darurat Bencana Banjir di Wajo Sulawesi Selatan  
-                </h5>
-                <p>25 mei 2024</p>
-            </div>
-        </div>
-        <div>
-            <div class=""></div>
-            <div></div>
-            <div></div>
         </div>
     </section>
 
-    <footer></footer>
+    <!-- Galeri -->
+    <section class="w-screen flex justify-center items-center mt-32">
+        <div class="w-4/5 flex gap-5">
+            <div class="w-1/3 flex flex-col justify-between">
+                <div>
+                    <h2 class="text-3xl font-bold">Galeri</h2>
+                </div>
+                <div>
+                    <h5 class="text-xl font-semibold mb-2">100+ Wilayah Perairan <br> <span class="text-[#FFC928]">Di Seluruh Sumatra</span></h5>
+                    <p class="text-xs leading-8">
+                        Merupakan detail data rekap jumlah aset dan infrastruktur yang terdata didalam Water Resources Data Center (WRDC)yang mana mencakup seluruh Balai Wilayah Sungai atau Balai Besar Wilayah Sungai
+                    </p>
+                </div>
+                <div class="w-fit py-2 px-5 bg-[#FFC928] rounded-tr-2xl rounded-bl-2xl rounded-tl-md rounded-br-md ">
+                    <a class="text-white text-sm font-medium" href="">Selengkapnya</a>
+                </div>
+            </div>
+            <div class="flex items-center gap-5">
+                <div class="">
+                    <img class="h-96" src="img/galeri1.png" alt="danau">
+                </div>
+                <div class="flex gap-5 items-center">
+                    <img class="h-72" src="img/galeri2.png" alt="danau">
+                    <img class="h-60" src="img/galeri3.png" alt="danau">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Layanan Terpadu -->
+    <section class="w-screen flex justify-center items-center mt-32">
+        <div class="w-4/5 flex flex-col">
+            <div>
+                <h2>Layanan Terpadu</h2>
+            </div>
+            <div class="flex">
+                <div class="w-1/4 h-auto flex flex-col">
+                    <img src="img/lumpia.png" alt="lumpia">
+                    <h5>Lumpia</h5>
+                </div>
+                <div class="w-1/4 h-auto flex flex-col justify-between">
+                    <img src="img/hidrologi.png" alt="hidrologi">
+                    <h5>Hidrologi</h5>
+                </div>
+                <div class="w-1/4 h-auto flex flex-col justify-between">
+                    <img src="img/saran.png" alt="saran">
+                    <h5>Saran dan Pengaduan</h5>
+                </div>
+                <div class="w-1/4 h-auto flex flex-col justify-between">
+                    <img src="img/bencana.png" alt="bencana">
+                    <h5>Bencana</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="mt-96">.</footer>
 
     <script>
         feather.replace();
