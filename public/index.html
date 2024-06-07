@@ -61,7 +61,7 @@
     </section>
 
     <!-- Berita -->
-    <section class="w-screen flex justify-center items-center mt-32 bg-[#E6F5FF]">
+    <section class="w-screen flex justify-center items-center mt-32 bg-biru-muda">
         <div class="w-4/5 my-10">
             <!-- Judul -->
             <div class="mb-5">
@@ -226,51 +226,115 @@
     </section>
 
     <!-- FAQ -->
-    <section class="w-screen flex justify-center items-center mt-32">
-        <div class="w-4/5 flex flex-col">
+    <section class="w-screen flex justify-center items-center mt-32 bg-biru-muda">
+        <div class="w-4/5 flex flex-col gap-5 my-10">
             <div>
-                <h5>FAQ</h5>
-                <h2>Frequently Asked Questions</h2>
+                <h5 class="text-kuning font-medium">FAQ</h5>
+                <h2 class="text-3xl font-medium">Frequently Asked Questions</h2>
             </div>
             <div class="flex gap-5">
-                <div class="flex flex-col">
-                    <div class="flex">
-                        <i data-feather="chevron-down"></i>
+                <div class="flex flex-col gap-5 w-1/2">
+                    <div class="flex gap-2">
+                        <i class="text-kuning w-10" data-feather="chevron-down"></i>
                         <div>
-                            <p>Kapan perusahaan ini didirikan?</p>
-                            <p>Perusahaan ini didirikan pada tahun 2010 oleh sekelompok profesional yang berdedikasi untuk menciptakan solusi inovatif bagi pelanggan di berbagai industri.</p>
+                            <p class="text-sm font-medium mb-2">
+                                Kapan perusahaan ini didirikan?
+                            </p>
+                            <p class="text-sm font-medium text-[#4865B0] leading-7 ml-4">
+                                Perusahaan ini didirikan pada tahun 2010 oleh sekelompok profesional yang berdedikasi untuk menciptakan solusi inovatif bagi pelanggan di berbagai industri.
+                            </p>
                         </div>
                     </div>
-                    <div class="flex">
-                        <i data-feather="chevron-down"></i>
+                    <div class="flex gap-2">
+                        <i class="text-kuning w-10" data-feather="chevron-down"></i>
                         <div>
-                            <p>Kapan perusahaan ini didirikan?</p>
-                            <p>Perusahaan ini didirikan pada tahun 2010 oleh sekelompok profesional yang berdedikasi untuk menciptakan solusi inovatif bagi pelanggan di berbagai industri.</p>
+                            <p class="text-sm font-medium mb-2">
+                                Apa nilai-nilai utama perusahaan?
+                            </p>
+                            <p class="hidden text-sm font-medium text-[#4865B0] leading-7 ml-4">
+                                Nilai-nilai utama perusahaan kami meliputi integritas, inovasi, kepuasan pelanggan, kerjasama tim, dan tanggung jawab sosial. Kami percaya bahwa nilai-nilai ini adalah kunci kesuksesan jangka panjang kami.
+                            </p>
                         </div>
                     </div>
-                    <div class="flex">
-                        <i data-feather="chevron-down"></i>
+                    <div class="flex gap-2">
+                        <i class="text-kuning w-10" data-feather="chevron-down"></i>
                         <div>
-                            <p>Kapan perusahaan ini didirikan?</p>
-                            <p>Perusahaan ini didirikan pada tahun 2010 oleh sekelompok profesional yang berdedikasi untuk menciptakan solusi inovatif bagi pelanggan di berbagai industri.</p>
+                            <p class="text-sm font-medium mb-2">
+                                Apakah perusahaan ini memiliki program tanggung jawab sosial?
+                            </p>
+                            <p class="hidden text-sm font-medium text-[#4865B0] leading-7 ml-4">
+                                Ya, kami memiliki berbagai program tanggung jawab sosial yang berfokus pada pendidikan, kesehatan, dan pelestarian lingkungan. Kami berkomitmen untuk memberikan dampak positif pada komunitas sekitar dan mendukung keberlanjutan lingkungan.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex gap-2">
+                        <i class="text-kuning w-10" data-feather="chevron-down"></i>
+                        <div>
+                            <p class="text-sm font-medium mb-2">
+                                Bagaimana cara perusahaan ini mengelola keluhan pelanggan?
+                            </p>
+                            <p class="hidden text-sm font-medium text-[#4865B0] leading-7 ml-4">
+                                Kami memiliki tim layanan pelanggan yang terlatih untuk menangani keluhan dan masukan dari pelanggan dengan cepat dan efektif. Pelanggan dapat menghubungi kami melalui email, telepon, atau platform media sosial kami.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex gap-2">
+                        <i class="text-kuning w-10" data-feather="chevron-down"></i>
+                        <div>
+                            <p class="text-sm font-medium mb-2">
+                                Apakah perusahaan ini memiliki kebijakan keberagaman dan inklusi?
+                            </p>
+                            <p class="hidden text-sm font-medium text-[#4865B0] leading-7 ml-4">
+                                Ya, kami sangat mendukung keberagaman dan inklusi di tempat kerja. Kami percaya bahwa lingkungan kerja yang beragam dan inklusif memperkuat tim kami dan membantu kami melayani pelanggan dengan lebih baik.
+                            </p>
                         </div>
                     </div>
                 </div>
                 <!-- Form -->
-                <div>
-                    <h2>Tanyakan hal lain</h2>
-                    <form action="">
-                        <input type="text" placeholder="nama">
-                        <input type="email" placeholder="e-mail">
-                        <textarea name="" id="" placeholder="pesan"></textarea>
-                        <button>Kirim</button>
+                <div class="flex flex-col items-center gap-10 w-1/2 px-5">
+                    <h2 class="text-2xl font-semibold">Tanyakan hal lain</h2>
+                    <form class="flex flex-col justify-center items-center gap-5 w-full" action="">
+                        <div class="w-full">
+                            <input required class="w-full bg-transparent focus:outline-none" type="text" placeholder="Nama">
+                            <hr class="w-full border-t border-2 border-kuning rounded-lg">
+                        </div>
+                        <div class="w-full">
+                            <input required class="w-full bg-transparent focus:outline-none" type="Email" placeholder="e-mail">
+                            <hr class="w-full border-t border-2 border-kuning rounded-lg">
+                        </div>
+                        <div class="w-full">
+                            <textarea required class="w-full h-40 bg-transparent focus:outline-none resize-none" name="" id="" placeholder="Pesan"></textarea>
+                            <hr class="w-full border-t border-2 border-kuning rounded-lg">
+                        </div>
+                        <button type="submit" class="place-self-end text-sm py-1 px-10 bg-kuning rounded-tl-2xl rounded-br-2xl rounded-tr-sm rounded-bl-sm ">Kirim</button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="mt-96">.</footer>
+    <!-- Aplikasi -->
+     <section class="w-screen flex justify-center items-center mt-16">
+        <div class="w-4/5 flex flex-col justify-center items-center gap-5">
+            <h2 class="text-3xl font-semibold">Aplikasi & Link Terkait</h2>
+            <div class="flex w-full justify-between">
+                <img src="img/apk1.png" alt="apk1">
+                <img src="img/apk2.png" alt="apk2">
+                <img src="img/apk3.png" alt="apk3">
+                <img src="img/apk4.png" alt="apk4">
+                <img src="img/apk5.png" alt="apk5">
+                <img src="img/apk6.png" alt="apk6">
+                <img src="img/apk7.png" alt="apk7">
+            </div>
+        </div>
+     </section>
+
+    <!-- Footer -->
+    <footer class="w-screen flex justify-center items-center mt-32 bg-biru">
+        <div class="">
+
+        </div>
+    </footer>
 
     <script>
         feather.replace();
