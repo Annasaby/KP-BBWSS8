@@ -1,21 +1,37 @@
-const a1 = document.querySelector("#a1");
-const i1 = document.querySelector("#i1");
 
-function tampilJawaban(e){
-    const currentStatus = e.getAttribute("data-status");
+const answers = document.querySelectorAll('[id^="a"]');
+console.log("answers ",answers);
 
-    if(currentStatus === "hilang"){
-        e.setAttribute("data-status", "muncul");
-        i1.setAttribute("data-feather", "chevron-up");
-        a1.classList.remove("hidden");
-    }else if(currentStatus === "muncul"){
-        e.setAttribute("data-status", "hilang");
-        i1.setAttribute("data-feather", "chevron-down");
-        a1.classList.add("hidden");
-    }
+function tampilJawaban(e) {
+  const currentStatus = e.getAttribute("status");
+  console.log("currentStatus ",currentStatus);
+  const questionId = e.getAttribute("id");
+  console.log("questionId ",questionId);
+  const answerId = `a${questionId.charAt(1)}`;
+  console.log("answerId ",answerId);
 
-    console.log("New Status:", e.getAttribute("data-status"));
-    console.log("Icon:", i1.getAttribute("data-feather"));
-    
-    feather.replace();
-};
+  if (currentStatus === "hilang") {
+    e.setAttribute("status", "muncul");
+    answers.forEach(answer => answer.classList.add("hidden"));
+    document.getElementById(answerId).classList.remove("hidden");
+  } else {
+    e.setAttribute("status", "hilang");
+    answers.forEach(answer => answer.classList.add("hidden"));
+  }
+}
+
+const form = document.querySelector("form");
+
+function sendFAQ(){
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "akifsakti9@gmail.com",
+        Password : "100C7D3FF26FCD6318C9AC9E1197AB697EAA",
+        To : 'akifsakti9@gmail.com',
+        From : "akifsakti9@gmail.com",
+        Subject : "Frequently Asked Questions",
+        Body : "Nama pengirim: " + document.getElementById("nama").value + "<br> E-Mail: " + document.getElementById("email").value + "<br> Pesan: " + document.getElementById("pesan").value
+    }).then(
+      message => alert(message)
+    );
+}
