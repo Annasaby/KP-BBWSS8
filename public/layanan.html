@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layanan</title>
+
+        <!-- Tailwind -->
+        <link rel="stylesheet" href="./css/output.css">
+
+        <!-- Feather-Icon -->
+        <script src="https://unpkg.com/feather-icons"></script>
+
+</head>
+<body class="bg-[#F5F8FF] font-poppins overflow-x-hidden">
+    <!-- Navbar -->
+    <nav class="w-screen fixed z-10 top-0">
+        <div class="w-screen h-16 bg-[#F5F8FF] flex flex-row justify-between items-center px-5">
+            <div class="">
+                <img class="h-8" src="img/Logo.png" alt="logo">
+            </div>
+            <div class="pr-5">
+                <ul class="flex flex-row gap-10">
+                    <li><a class="hover:text-kuning" href="index.html">Beranda</a></li>
+                    <li>
+                        <a class="hover:text-kuning"  href="profil.html">Profil</a>
+                    </li>
+                    <li class="flex flex-row items-center">
+                        <a class="hover:text-kuning" href="berita.html">Berita</a>
+                    </li>
+                    <li class="">
+                        <a class="hover:text-kuning" href="galeri.html">Galeri</a>
+                    </li>
+                    <li class="">
+                        <a class="hover:text-kuning" href="index.html">Layanan Terpadu</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-kuning" href="index#faq.html">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr class=" border-t border-yellow-400">
+    </nav>
+
+    <!-- Menu -->
+    <section class="w-screen flex justify-center items-center mt-20">
+    <div class="w-4/5 p-5 flex justify-evenly bg-slate-200 rounded-xl">
+        <div class="flex gap-2 items-center">
+            <i data-feather="package"></i>
+            <h6 class=" font-semibold">Aset</h6>
+        </div>
+        <div class="flex gap-2 items-center">
+            <i data-feather="feather"></i>
+            <h6 class=" font-semibold">Pengaduan BPJ</h6>
+        </div>
+        <div class="flex gap-2 items-center">
+            <i data-feather="cloud-lightning"></i>
+            <h6 class=" font-semibold">Bencana</h6>
+        </div>
+        <div class="flex gap-2 items-center">
+            <i data-feather="message-circle"></i>
+            <h6 class=" font-semibold">Pengaduan LSM</h6>
+        </div>
+        <div class="flex gap-2 items-center">
+            <i data-feather="smile"></i>
+            <h6 class=" font-semibold   ">Pengaduan Layanan Publik</h6>
+        </div>
+    </div>
+    </section>
+
+    <!-- Jumbotron -->
+    <section class="w-screen flex justify-center items-center mt-10">
+    <div class="relative w-4/5 pb-20 ">
+        <img class="" src="img/jumbotron-layanan.png" alt="">
+        <div class="absolute p-1 bottom-0 left-[50%] -translate-x-2/4 w-40 h-40 bg-slate-300 rounded-full border-8 border-[#F5F8FF]">
+            <img src="img/laporMang.png" alt="logo lapor mang">
+        </div>
+    </div>
+    </section>
+
+    <!-- Form -->
+    <section class="w-screen flex justify-center items-center mt-20">
+        <div class="w-4/5">
+            <form class="grid grid-cols-[1fr,2fr] gap-y-5" action="">
+                
+                <label class="font-semibold" for="">Tujuan Pelaporan</label>
+                <input class="border border-black rounded-md p-2" type="text" value="xxxx">
+                        
+                <label class="font-semibold" for="">Nama Lengkap</label>
+                <input class="border border-black rounded-md p-2" type="text" placeholder="Akif Ramadhan Annasaby">
+            
+                <label class="font-semibold" for="">Phone</label>
+                <input class="border border-black rounded-md p-2" type="number" placeholder="0812345656">
+            
+                <label class="font-semibold" for="">E-mail</label>
+                <input class="border border-black rounded-md p-2" type="email" placeholder="minyakwijen@gmail.com">
+            
+                <label class="font-semibold" for="">Judul Laporan</label>
+                <input class="border border-black rounded-md p-2" type="text" placeholder="terjadi badai biawak">
+            
+                <label class="font-semibold" for="">Deskripsi laporan</label>
+                <textarea class="border border-black rounded-md p-2" name="" id="" placeholder="banyak biawak bertebaran di kantor"></textarea>
+            
+                <Label class="font-semibold" for="">Tanggal Kejadian</Label>
+                <input class="border border-black rounded-md p-2" type="date">
+            
+                <label class="font-semibold" for="">Lokasi Kejadian</label>
+                <input class="border border-black rounded-md p-2" type="text" placeholder="Palembang">
+            
+                <label class="font-semibold" for="">Lampiran</label>
+                <input class="border border-black rounded-md p-2" type="file">
+
+                <button class=" col-start-2" type="submit">Kirim</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="w-screen flex justify-center items-center mt-32 bg-biru">
+        <div class="w-4/5 flex justify-between items-center my-5">
+            <div class="flex flex-col gap-3">
+                <div class="flex items-center gap-3">
+                    <img class="h-10 object-cover" src="img/logoAjah.png" alt="">
+                    <h2 class="text-3xl font-bold text-white">PUPR</h2>
+                </div>
+                <p class="text-sm text-white">Copyright © 2024.TEAM KP UNSRI</p>
+                <p class="text-sm text-white">All rights reserved</p>
+                <div class="flex gap-1">
+                    <div class="p-2 bg-slate-400 rounded-full">
+                        <i class="h-4 w-4 text-white" data-feather="instagram"></i>
+                    </div>
+                    <div class="p-2 bg-slate-400 rounded-full">
+                        <i class="h-4 w-4 text-white" data-feather="phone"></i>
+                    </div>
+                    <div class="p-2 bg-slate-400 rounded-full">
+                        <i class="h-4 w-4 text-white" data-feather="twitter"></i>
+                    </div>
+                    <div class="p-2 bg-slate-400 rounded-full">
+                        <i class="h-4 w-4 text-white" data-feather="youtube"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="w-1/2 grid grid-cols-3 gap-y-3 text-white">
+                <h5 class="text-lg font-medium">Company</h5>
+                <h5 class="text-lg font-medium">Support</h5>
+                <h5 class="text-lg font-medium">Lokasi Kami</h5>
+                <div class="flex flex-col gap-2">
+                    <p class="text-xs">Contac us</p>
+                    <p class="text-xs">Testimonial</p>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <p class="text-xs">Legal</p>
+                    <p class="text-xs">Privacy policy</p>
+                    <p class="text-xs">Status</p>
+                </div>
+                <div>
+                    <iframe class="w-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.5553909553064!2d104.6968987736376!3d-2.9432190970330248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3b7599c141f883%3A0x84022e0acc15f251!2sBalai%20Besar%20Wilayah%20Sungai%20Sumatera%20VIII!5e0!3m2!1sid!2sid!4v1717988416957!5m2!1sid!2sid" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <p class="col-start-3 text-xs">Jl. Soekarno-Hatta No.869, Palembang, Sumatera Selatan 30151
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
