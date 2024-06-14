@@ -4,11 +4,8 @@ console.log("answers ",answers);
 
 function tampilJawaban(e) {
   const currentStatus = e.getAttribute("status");
-  console.log("currentStatus ",currentStatus);
   const questionId = e.getAttribute("id");
-  console.log("questionId ",questionId);
   const answerId = `a${questionId.charAt(1)}`;
-  console.log("answerId ",answerId);
 
   if (currentStatus === "hilang") {
     e.setAttribute("status", "muncul");

@@ -45,27 +45,31 @@
 
     <!-- Menu -->
     <section class="w-screen flex justify-center items-center mt-20">
-    <div class="w-4/5 p-5 flex justify-evenly bg-slate-200 rounded-xl">
-        <div class="flex gap-2 items-center">
+    <div class="w-4/5 p-2 flex justify-evenly bg-slate-200 rounded-xl">
+        <a id="menu1" onclick="highlight(this)" class="flex gap-2 items-center cursor-pointer py-2 px-3 rounded-lg bg-white" href="#form">
             <i data-feather="package"></i>
             <h6 class=" font-semibold">Aset</h6>
-        </div>
-        <div class="flex gap-2 items-center">
+        </a>
+
+        <a id="menu2" onclick="highlight(this)" class="flex gap-2 items-center cursor-pointer py-2 px-3 rounded-lg bg-white" href="#form">
             <i data-feather="feather"></i>
             <h6 class=" font-semibold">Pengaduan BPJ</h6>
-        </div>
-        <div class="flex gap-2 items-center">
+        </a>
+
+        <a id="menu3" onclick="highlight(this)" class="flex gap-2 items-center cursor-pointer py-2 px-3 rounded-lg bg-white" href="#form">
             <i data-feather="cloud-lightning"></i>
             <h6 class=" font-semibold">Bencana</h6>
-        </div>
-        <div class="flex gap-2 items-center">
+        </a>
+
+        <a id="menu4" onclick="highlight(this)" class="flex gap-2 items-center cursor-pointer py-2 px-3 rounded-lg" href="#form">
             <i data-feather="message-circle"></i>
             <h6 class=" font-semibold">Pengaduan LSM</h6>
-        </div>
-        <div class="flex gap-2 items-center">
+        </a>
+
+        <a id="menu5" onclick="highlight(this)" class="flex gap-2 items-center cursor-pointer py-2 px-3 rounded-lg" href="#form">
             <i data-feather="smile"></i>
-            <h6 class=" font-semibold   ">Pengaduan Layanan Publik</h6>
-        </div>
+            <h6 class="font-semibold">Pengaduan Layanan Publik</h6>
+        </a>
     </div>
     </section>
 
@@ -80,38 +84,38 @@
     </section>
 
     <!-- Form -->
-    <section class="w-screen flex justify-center items-center mt-20">
+    <section id="form" class="w-screen flex justify-center items-center mt-20">
         <div class="w-4/5">
-            <form class="grid grid-cols-[1fr,2fr] gap-y-5" action="">
+            <form onsubmit="sendLayanan(); reset(); return false;" class="grid grid-cols-[1fr,2fr] gap-y-5" action="">
                 
                 <label class="font-semibold" for="">Tujuan Pelaporan</label>
-                <input class="border border-black rounded-md p-2" type="text" value="xxxx">
+                <input id="tujuan" class="border border-black rounded-md p-2" type="text" value="Aset" disabled>
                         
                 <label class="font-semibold" for="">Nama Lengkap</label>
-                <input class="border border-black rounded-md p-2" type="text" placeholder="Akif Ramadhan Annasaby">
+                <input id="nama" class="border border-black rounded-md p-2" type="text" placeholder="Akif Ramadhan Annasaby"  required>
             
                 <label class="font-semibold" for="">Phone</label>
-                <input class="border border-black rounded-md p-2" type="number" placeholder="0812345656">
+                <input id="phone" class="border border-black rounded-md p-2" type="number" placeholder="0812345656">
             
                 <label class="font-semibold" for="">E-mail</label>
-                <input class="border border-black rounded-md p-2" type="email" placeholder="minyakwijen@gmail.com">
+                <input id="email" class="border border-black rounded-md p-2" type="email" placeholder="minyakwijen@gmail.com">
             
                 <label class="font-semibold" for="">Judul Laporan</label>
-                <input class="border border-black rounded-md p-2" type="text" placeholder="terjadi badai biawak">
+                <input id="judul" class="border border-black rounded-md p-2" type="text" placeholder="terjadi badai biawak">
             
                 <label class="font-semibold" for="">Deskripsi laporan</label>
-                <textarea class="border border-black rounded-md p-2" name="" id="" placeholder="banyak biawak bertebaran di kantor"></textarea>
+                <textarea id="deskripsi" class="border border-black rounded-md p-2" name="" id="" placeholder="banyak biawak bertebaran di kantor"></textarea>
             
                 <Label class="font-semibold" for="">Tanggal Kejadian</Label>
-                <input class="border border-black rounded-md p-2" type="date">
+                <input id="tanggal" class="border border-black rounded-md p-2" type="date">
             
                 <label class="font-semibold" for="">Lokasi Kejadian</label>
-                <input class="border border-black rounded-md p-2" type="text" placeholder="Palembang">
+                <input id="lokasi" class="border border-black rounded-md p-2" type="text" placeholder="Palembang">
             
                 <label class="font-semibold" for="">Lampiran</label>
-                <input class="border border-black rounded-md p-2" type="file">
+                <input id="lampiran" class="border border-black rounded-md p-2" type="file">
 
-                <button class=" col-start-2" type="submit">Kirim</button>
+                <button onclick="" type="submit" class="col-start-2 place-self-end p-2 bg-kuning hover:bg-yellow-300 rounded-md w-20">Kirim</button>
             </form>
         </div>
     </section>
@@ -166,5 +170,8 @@
     <script>
         feather.replace();
     </script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script src="layanan.js"></script>
 </body>
 </html>
