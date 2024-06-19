@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layanan</title>
+    <title>BBWSS8</title>
 
-        <!-- Tailwind -->
-        <link rel="stylesheet" href="./css/output.css">
+    <!-- Tailwind -->
+    <link rel="stylesheet" href="./css/output.css">
 
-        <!-- Feather-Icon -->
-        <script src="https://unpkg.com/feather-icons"></script>
+    <!-- Feather-Icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
 
 </head>
 <body class="bg-[#F5F8FF] font-poppins overflow-x-hidden">
@@ -26,16 +26,16 @@
                         <a class="hover:text-kuning"  href="profil.html">Profil</a>
                     </li>
                     <li class="flex flex-row items-center">
-                        <a class="hover:text-kuning" href="berita.html">Berita</a>
+                        <a class="hover:text-kuning" href="index.html#berita">Berita</a>
                     </li>
                     <li class="">
                         <a class="hover:text-kuning" href="galeri.html">Galeri</a>
                     </li>
                     <li class="">
-                        <a class="hover:text-kuning" href="index.html">Layanan Terpadu</a>
+                        <a class="hover:text-kuning" href="index.html#layanan-terpadu">Layanan Terpadu</a>
                     </li>
                     <li>
-                        <a class="hover:text-kuning" href="index#faq.html">FAQ</a>
+                        <a class="hover:text-kuning" href="index.html#faq">FAQ</a>
                     </li>
                 </ul>
             </div>
@@ -44,19 +44,19 @@
     </nav>
 
     <!-- Menu -->
-    <section class="w-screen flex justify-center items-center mt-20">
+    <section class="w-screen flex justify-center items-center mt-20  required">
     <div class="w-4/5 p-2 flex justify-evenly bg-slate-200 rounded-xl">
         <a id="menu1" onclick="highlight(this)" class="flex gap-2 items-center cursor-pointer py-2 px-3 rounded-lg bg-white" href="#form">
             <i data-feather="package"></i>
             <h6 class=" font-semibold">Aset</h6>
         </a>
 
-        <a id="menu2" onclick="highlight(this)" class="flex gap-2 items-center cursor-pointer py-2 px-3 rounded-lg bg-white" href="#form">
+        <a id="menu2" onclick="highlight(this)" class="flex gap-2 items-center cursor-pointer py-2 px-3 rounded-lg " href="#form">
             <i data-feather="feather"></i>
             <h6 class=" font-semibold">Pengaduan BPJ</h6>
         </a>
 
-        <a id="menu3" onclick="highlight(this)" class="flex gap-2 items-center cursor-pointer py-2 px-3 rounded-lg bg-white" href="#form">
+        <a id="menu3" onclick="highlight(this)" class="flex gap-2 items-center cursor-pointer py-2 px-3 rounded-lg " href="#form">
             <i data-feather="cloud-lightning"></i>
             <h6 class=" font-semibold">Bencana</h6>
         </a>
@@ -84,36 +84,36 @@
     </section>
 
     <!-- Form -->
-    <section id="form" class="w-screen flex justify-center items-center mt-20">
-        <div class="w-4/5">
+    <section id="form" class="w-screen flex justify-center items-center">
+        <div class="w-4/5 pt-20">
             <form onsubmit="sendLayanan(); reset(); return false;" class="grid grid-cols-[1fr,2fr] gap-y-5" action="">
                 
                 <label class="font-semibold" for="">Tujuan Pelaporan</label>
-                <input id="tujuan" class="border border-black rounded-md p-2" type="text" value="Aset" disabled>
+                <input id="tujuan" class="border border-black rounded-md p-2 text-red-600" type="text" value="Aset" disabled>
                         
                 <label class="font-semibold" for="">Nama Lengkap</label>
-                <input id="nama" class="border border-black rounded-md p-2" type="text" placeholder="Akif Ramadhan Annasaby"  required>
+                <input  required id="nama" class="border border-black rounded-md p-2" type="text" placeholder="Akif Ramadhan Annasaby">
             
                 <label class="font-semibold" for="">Phone</label>
-                <input id="phone" class="border border-black rounded-md p-2" type="number" placeholder="0812345656">
+                <input  required id="phone" class="border border-black rounded-md p-2 [&::-webkit-inner-spin-button]:appearance-none" type="number" placeholder="0812345656" >
             
                 <label class="font-semibold" for="">E-mail</label>
-                <input id="email" class="border border-black rounded-md p-2" type="email" placeholder="minyakwijen@gmail.com">
+                <input  required id="email" class="border border-black rounded-md p-2" type="email" placeholder="minyakwijen@gmail.com">
             
                 <label class="font-semibold" for="">Judul Laporan</label>
-                <input id="judul" class="border border-black rounded-md p-2" type="text" placeholder="terjadi badai biawak">
+                <input  required id="judul" class="border border-black rounded-md p-2" type="text" placeholder="terjadi badai biawak">
             
                 <label class="font-semibold" for="">Deskripsi laporan</label>
-                <textarea id="deskripsi" class="border border-black rounded-md p-2" name="" id="" placeholder="banyak biawak bertebaran di kantor"></textarea>
+                <textarea  required id="deskripsi" class="border border-black rounded-md p-2" name="" placeholder="banyak biawak bertebaran di kantor"></textarea>
             
                 <Label class="font-semibold" for="">Tanggal Kejadian</Label>
-                <input id="tanggal" class="border border-black rounded-md p-2" type="date">
+                <input  required id="tanggal" class="border border-black rounded-md p-2" type="date">
             
                 <label class="font-semibold" for="">Lokasi Kejadian</label>
-                <input id="lokasi" class="border border-black rounded-md p-2" type="text" placeholder="Palembang">
+                <input  required id="lokasi" class="border border-black rounded-md p-2" type="text" placeholder="Palembang">
             
                 <label class="font-semibold" for="">Lampiran</label>
-                <input id="lampiran" class="border border-black rounded-md p-2" type="file">
+                <input  required id="lampiran" class="border border-black rounded-md p-2" type="file">
 
                 <button onclick="" type="submit" class="col-start-2 place-self-end p-2 bg-kuning hover:bg-yellow-300 rounded-md w-20">Kirim</button>
             </form>
